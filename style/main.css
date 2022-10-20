@@ -1,0 +1,153 @@
+.main{
+    padding: 0px;
+    width:100%;
+}
+.main .detail h1{
+    font-size: 60px;
+    color: black;
+    line-height: 65px;
+    margin-bottom: 35px;
+}
+.main .detail h2{
+    display:none;
+}
+.main .detail p{
+    margin-bottom: 55px;
+    width:60%;
+}
+.main .top{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    width: 75%;
+    margin: -30px auto 0px auto;
+}
+
+.main .top .picture{
+    width:40%;
+    height:500px;
+}
+
+.main .top .picture img{
+    width:100%;
+    height:500px;
+}
+
+.main .top .detail{
+    width: 60%;
+}
+.main .top .detail input{
+    padding: 5px 16px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
+    font-weight: 700;
+}
+
+.main .top .detail input:hover{
+    color: hsl(0, 0%, 8%);
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.main .bottom{
+    width:80%;
+    margin-top: 130px;
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items:center;   
+}
+
+
+@media only screen and (max-width: 800px){
+    .main{
+        padding: 0px;
+        width:100%;
+    }
+    .main .detail h2{
+        display:block;
+        font-size: 22px;
+        color: black;
+        width:100%;
+        margin: 30px auto 10px auto;
+        
+    }
+    .main .detail h1{
+        display:none;
+    }
+    .main .detail p{
+       font-size: 12px;
+       width:85%;
+       margin: 0px auto 20px auto;
+    }
+
+    .main .top{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .main .top .detail{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main .top .picture{
+        width:100%;
+        height:300px;
+    }
+    .main .top .picture img{
+        width:100%;
+        height:300px;
+    }
+   .main .bottom{
+    margin-top: 100px;
+    width: 100%;
+   }
+  
+  .main .bottom img{
+    margin-right:0px;
+    width:60px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1100px){
+    .main{
+        padding: 0px;
+        width:100%;
+        margin-top: 40px;
+    }
+    .main .detail h2{
+        display:none;
+        
+    }
+    .main .detail h1{
+        display:block;
+        font-size:45px;
+        line-height: 50px;
+    }
+    .main .detail p{
+       font-size: 12px;
+       width:80%;
+    }
+
+    .main .top .detail{
+        width: 55%;
+    }
+    .main .top .picture{
+        width:45%;
+        height:400px;
+    }
+    .main .top .picture img{
+        width:100%;
+        height:400px;
+    }
+   .main .bottom{
+    margin-top: 95px;
+    width: 90%;
+   }
+  
+  .main .bottom img{
+    width: 60px;
+  }
+}

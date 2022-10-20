@@ -1,0 +1,124 @@
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 60px 100px;
+    font-size: 0.7rem;
+}
+.nav .left{
+    width:5%;
+}
+.nav .right{
+    width: 95%;
+    display:flex;
+    justify-content: space-between;
+    padding-left:20px;
+}
+
+.nav .navHead{
+    display: flex;
+}
+.nav .navHead span{
+    margin-left:30px;
+    color: hsl(0, 0%, 41%);
+}
+.nav .navHead span:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.nav .navList{
+    display: flex;
+    margin-left: -10px;
+}
+
+.nav .navList div{
+    margin-right:10px;
+}
+
+.nav .navList ul{
+    background-color: #fff;
+    padding:20px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.nav .navList ul li{
+    list-style-type: none;
+    line-height: 20px;
+    font-size: 11px;
+    color:hsl(0, 0%, 41%);
+}
+
+.nav .navList ul li img{
+    width: 10px;
+    height:9px;
+    margin-right:4px;
+}
+
+.nav input{
+    background-color: none;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 41%);
+    padding: 4px 12px;
+    color:hsl(0, 0%, 41%);
+    background-color: transparent;
+}
+
+.nav .login{
+    border: none;
+}
+.nav .login:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.nav .register:hover{
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+
+.nav .navList .features, .nav .navList .company{
+    display: none;
+    margin-bottom: -35px;
+}
+.nav .menu{
+    display: none;
+}
+
+.nav .navList .company{
+    margin-left: 123px;
+}
+
+@media only screen and (max-width:700px){
+    .nav{
+        padding: 30px 40px;
+    }
+    .nav .menu{
+        display: block;
+    }
+    .nav .right{
+        display: none;
+        padding: 0px 0px;
+        text-align:right;
+        position:absolute;
+        z-index: 1;
+       
+    }
+    .nav .navHead{
+        flex-direction: column;
+        line-height: 35px;
+        background-color: white;
+    }
+    
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px){
+    .nav{
+        padding: 60px 40px;
+    }
+    .nav .navHead{
+        margin-left: 40px;
+    }
+}
+
